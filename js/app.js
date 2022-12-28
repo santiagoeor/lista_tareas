@@ -3,7 +3,7 @@
   'use strict';
 
   let url = window.location.href;
-  let swLocation = '/twitor/sw.js';
+  let swLocation = '/lista_tareas/sw.js';
 
   if (navigator.serviceWorker) {
 
