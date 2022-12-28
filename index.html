@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>VanillaJS • TodoMVC</title>
+  <link rel="stylesheet" href="style/base.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--[if IE]>
+      <script src="style/ie.js"></script>
+    <![endif]-->
+  <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Android -->
+  <meta name="theme-color" content="#3498db">
+</head>
+
+<body>
+  <div class="content">
+    <div class="row">
+      <div class="col-0 col-md-2"></div>
+      <div class="col-12 col-md-8">
+        <section id="todoapp">
+          <header id="header">
+            <h1>todos</h1>
+            <input id="new-todo" placeholder="What needs to be done?" autofocus>
+          </header>
+          <section id="main">
+            <ul id="todo-list"></ul>
+          </section>
+          <footer id="footer">
+            <span id="todo-count"></span>
+            <div id="sync-wrapper">
+              <div id="sync-success">Currently syncing</div>
+              <div id="sync-error">There was a problem syncing</div>
+            </div>
+          </footer>
+        </section>
+      </div>
+      <div class="col-0 col-md-2"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/pouchdb@8.0.0/dist/pouchdb.min.js"></script>
+  <script src="js/base.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
